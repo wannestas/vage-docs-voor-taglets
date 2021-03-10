@@ -6,14 +6,34 @@ Als iemand een fout ziet gelieve een PR te doen om het te verbeteren want ik geb
 
 Legende:
 * A moet B bevatten -> tag B moet vlak boven de definitie van A staan
-
 * A moet B omvatten -> tag B moet binnen de definitie van A staan
-
 * O -> Object
-
 * B -> Boolean Expression
-
 * E -> Error
+
+- [vage-docs-voor-taglets](#vage-docs-voor-taglets)
+  * [`@basic`](#--basic-)
+  * [`@creates`](#--creates-)
+  * [`@immutable`](#--immutable-)
+  * [`@invar`](#--invar-)
+  * [`@mutates` & `@inspects`](#--mutates------inspects-)
+    + [`@mutates`](#--mutates-)
+    + [`@inspects`](#--inspects-)
+  * [`@pre` & `@post`](#--pre------post-)
+    + [`@pre`](#--pre-)
+    + [`@post`](#--post-)
+  * [`@representationObject(s)`](#--representationobject-s--)
+    + [`@representationObject`](#--representationobject-)
+    + [`@representationObjects`](#--representationobjects-)
+  * [`@throws`](#--throws-)
+  * [`@peerobject(s)`](#--peerobject-s--)
+    + [`@peerObject`](#--peerobject-)
+    + [`@peerObjects`](#--peerobjects-)
+  * [`@mutates_properties`](#--mutates-properties-)
+  * [`@may_throw`](#--may-throw-)
+
+<small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small>
+
 
 ## `@basic`
 
