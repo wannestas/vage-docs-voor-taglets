@@ -22,18 +22,15 @@ Legende:
   * [`@pre` & `@post`](#pre--post)
     + [`@pre`](#pre)
     + [`@post`](#post)
-  * [`@representationObject(s)`](#representationobject-s-)
+  * [`@representationObject(s)`](#representationobjects)
     + [`@representationObject`](#representationobject)
-    + [`@representationObjects`](#representationobjects)
+    + [`@representationObjects`](#representationobjects-1)
   * [`@throws`](#throws)
-  * [`@peerobject(s)`](#peerobject-s-)
+  * [`@peerobject(s)`](#peerobjects)
     + [`@peerObject`](#peerobject)
-    + [`@peerObjects`](#peerobjects)
+    + [`@peerObjects`](#peerobjects-1)
   * [`@mutates_properties`](#mutates-properties)
   * [`@may_throw`](#may-throw)
-
-<small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small>
-
 
 ## `@basic`
 
@@ -110,7 +107,7 @@ Deze definitie is nog vager aangezien deze tag maar 2 keer gebruikt is in het he
 Bij defensief programmeren wordt dit bvb gebruikt voor input validation ipv `@pre` bij contractual programming. Merk op: `@throws` is enkel documentatie en gaat dus niet zelf throwen, de effectieve check op de conditie en daarna de throw moeten nog apart geïmplementeerd worden door de programmeur.
 
 
-## `@peerobject(s)`
+## `@peerObject(s)`
 
 nog niet gezien
 
