@@ -4,9 +4,16 @@ slechte attempt at documentatie voor taglets van een vak dat ik niet ga noemen o
 Alle definities en uitleg hier is mijn persoonlijke interpretatie, neem dus zeker niet aan dat alles correct is.
 Als iemand een fout ziet gelieve een PR te doen om het te verbeteren want ik gebruik dit zelf dus zou wel handig zijn als het allemaal juist was :p
 
-Quick clarification:
-A moet B bevatten -> tag B moet vlak boven de definitie van A staan
-A moet B omvatten -> tag B moet binnen de definitie van A staan
+Legende:
+* A moet B bevatten -> tag B moet vlak boven de definitie van A staan
+
+* A moet B omvatten -> tag B moet binnen de definitie van A staan
+
+* O -> Object
+
+* B -> Boolean Expression
+
+* E -> Error
 
 ## `@basic`
 
