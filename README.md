@@ -44,6 +44,10 @@ Legende:
 
 **Een class moet `@immutable` bevatten als en slechts als geen enkele instantie van die class na construction nog aangepast kan worden.**
 
+**Een method moet `@immutable` bevatten als en slechts als de `result` immutable is**
+
+deze laatste definitie ben ik heel onzeker van aangezien daar niks van in de cursus staat, maar 2 keren wordt deze tag op deze manier gebruikt dus ik vermoed dat dit bestaat.
+
 ## `@invar`
 
 **Een class moet `@invar | B` bevatten of omvatten als en slechts als de conditie B altijd waar moet zijn.**
