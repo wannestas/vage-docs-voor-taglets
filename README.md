@@ -38,7 +38,7 @@ Legende:
 
 ## `@creates`
 
-**Een method moet `@creates` bevatten als en slechts als de method een object maakt dat los staat van elk object dat al bestond, dus geen `@representationObject` of `@peerObject` is van een al bestaand object, en waar de klant dus volledige controle over heeft en mag aannemen dat dat object nooit gaat geinspecteerd of gemuteerd worden behalve als hij dat zelf doet.**
+**Een method moet `@creates | O` bevatten als en slechts als de method een object O maakt dat los staat van elk object dat al bestond, dus geen `@representationObject` of `@peerObject` is van een al bestaand object, en waar de klant dus volledige controle over heeft en mag aannemen dat dat object nooit gaat geinspecteerd of gemuteerd worden behalve als hij dat zelf doet.**
 
 ## `@immutable`
 
