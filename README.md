@@ -69,6 +69,8 @@ In vele gevallen moet elke `@invar` binnen een definitie ook buiten de definitie
 
 O kan ook `this` zijn indien het zichzelf aanpast of inspecteert, respectievelijk zoals setters en getters (alhoewel dit bij getters al by default is, maar bij setters niet).
 
+`@mutates` en `@inspects` zijn enkel nodig als O mutable is. Als O immutable is kan het dus niet gemuteerd worden en is het altijd `@inspects`, dus dit moet niet geschreven worden.
+
 By default als er geen`@mutates` of `@inspects` staat mag een method elk mutable object muteren en inspecteren, maar dit lijkt mij counter-intuitive aangezien men dan nooit `@inspects` of `@mutates` moet toevoegen, dus ik werk persoonlijk altijd onder de assumptie dat de default is dat niks mag geïnspecteerd of gemuteerd worden zonder dat de tags er staan. (als iemand mij hier een tegenvoorbeeld kan leveren waarom dit wel logisch is, please do, mijn mentale gezondheid is er onder aan het lijden)
 Een constructor mag by default zichzelf muteren 
 Als een method name begint met ‘get’ of ‘is’ is de default dat het niks mag muteren en `this` inspecteert. De symmetrische default voor setters bestaat niet voor zover ik kan vinden, dus daar moet altijd een `@mutates | this` gezet worden.
