@@ -74,12 +74,13 @@ O kan ook `this` zijn indien het zichzelf aanpast of inspecteert, respectievelij
 By default als er geen`@mutates` of `@inspects` staat mag een method elk mutable object muteren en inspecteren, maar dit lijkt mij counter-intuitive aangezien men dan nooit `@inspects` of `@mutates` moet toevoegen, dus ik werk persoonlijk altijd onder de assumptie dat de default is dat niks mag geïnspecteerd of gemuteerd worden zonder dat de tags er staan. (als iemand mij hier een tegenvoorbeeld kan leveren waarom dit wel logisch is, please do, mijn mentale gezondheid is er onder aan het lijden)
 Een constructor mag by default zichzelf muteren 
 Als een method name begint met ‘get’ of ‘is’ is de default dat het niks mag muteren en `this` inspecteert. De symmetrische default voor setters bestaat niet voor zover ik kan vinden, dus daar moet altijd een `@mutates | this` gezet worden.
+`@mutates` is niet nodig voor `@immutable` objects.
 
 ## `@pre` & `@post`
 
 ### `@pre`
 
-**Een method moet `@pre | B` bevatten als en slechts als de method enkel werkt onder de assumptie dat de boolean expression B waar is voor het beginnen van de method.**
+**Een method moet `@pre | B` bevatten als en slechts als de method enkel gegarandeerd is om te werken onder de assumptie dat de boolean expression B waar is voor het beginnen van de method.**
 
 `@pre` is enkel van toepassing voor contractueel programmeren, waar men mag aannemen dat de klant de documentatie duidelijk heeft gelezen en zich daar altijd aan houdt.
 Zie `@throws` voor de tegenhanger van `@pre` bij defensief programmeren.
