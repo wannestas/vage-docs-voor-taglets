@@ -44,9 +44,7 @@ Legende:
 
 **Een class moet `@immutable` bevatten als en slechts als geen enkele instantie van die class na construction nog aangepast kan worden.**
 
-**Een method moet `@immutable` bevatten als en slechts als de class waarin die method zich bevindt geen `@immutable` heeft, en heft veld dat returned wordt final/immutable is.**
-
-deze laatste definitie ben ik heel onzeker van aangezien daar niks van in de cursus staat, maar 2 keren wordt deze tag op deze manier gebruikt dus ik vermoed dat dit bestaat.
+**Een method moet `@immutable` bevatten als en slechts als de class waarin die method zich bevindt geen `@immutable` heeft, en die method over de lifetime van het object altijd hetzelfde zal returnen, zij het een constante of een reference naar een ander object.**
 
 ## `@invar`
 
